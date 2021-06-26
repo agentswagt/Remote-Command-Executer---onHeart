@@ -1,6 +1,6 @@
-Project Number: 001
+#Project Number: 001
 
-Title: Remote Command Executer
+#Title: Remote Command Executer
 
 
 #Building Information:
@@ -29,6 +29,7 @@ Title: Remote Command Executer
 		time
 
 #Project Details:
+
 	Planning Date: 26-06-2021
 	Starting Date: 26-06-2021
 	Release Date : ----------
