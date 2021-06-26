@@ -16,19 +16,25 @@ Title: Remote Command Executer
 	
 
 #Requirements:
+
 	packages:
-		~git
+
+		git
+
 	python-packages(module):
-		~requests
-		~os
-		~subproccess
-		~time
+
+		requests
+		os
+		subproccess
+		time
+
 #Project Details:
 	Planning Date: 26-06-2021
 	Starting Date: 26-06-2021
 	Release Date : ----------
 
 #Github Details:
+	link: https://github.com/agentswagt/Remote-Command-Executer---onHeart
 
 	
 	
