@@ -16,4 +16,10 @@ the_command_line = f"{command_code}{command}"
 writer = open(script_id, "w")
 writer.write(the_command_line)
 writer.close()
+
+#Moving file to order folder
+
+os.system(f"move {script_id} order")
+
+
 os.system("python pusher.py")
