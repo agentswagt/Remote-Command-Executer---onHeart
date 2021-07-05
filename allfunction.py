@@ -21,7 +21,7 @@ def repeatchecker(command_number_online):
     if last_code == str(new_code):
         return True
     
-    if str(new_code) == " ":
+    if str(new_code) == "9999":
         return True
     else:
         return False
