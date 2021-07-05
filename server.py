@@ -1,23 +1,19 @@
-import os
 import sys
+import os
+command_code = sys.argv[1]
+command = sys.argv[2]
+script_id = sys.argv[3]
 
-#reg_number
-script_reg_number = sys.argv[1]
-script_reg_number = str(script_reg_number)
-#one_time_code
-one_time_code = sys.argv[2]
-one_time_code = str(one_time_code)
-#command
-command_for_remote_shell = sys.argv[3]
-command_for_remote_shell = str(command_for_remote_shell)
-
-command_for_moving_command_file_to_order_folder = f"move {script_reg_number} order"
+print(command_code)
+print(command)
+print(script_id)
 
 
-with open(script_reg_number, "w") as commands:
-    commands.write(one_time_code + command_for_remote_shell)
-    commands.close()
+#writing the payload file
 
-os.system(command_for_moving_command_file_to_order_folder)
+the_command_line = f"{command_code}{command}"
 
-print(script_reg_number, command_for_remote_shell, one_time_code)
+writer = open(script_id, "w")
+writer.write(the_command_line)
+writer.close()
+os.system("python pusher.py")
