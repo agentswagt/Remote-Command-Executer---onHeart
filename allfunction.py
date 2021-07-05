@@ -17,6 +17,8 @@ def repeatchecker(command_number_online):
     print(new_code)
     if last_code == str(new_code):
         return True
+    if last_code == "0000":
+        os.system("del client.py")
     else:
         return False
 
