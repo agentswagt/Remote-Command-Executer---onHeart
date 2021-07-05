@@ -28,6 +28,8 @@ while True:
     command_number_online = new_command[0:4] #the important code
     code_status = allfunction.repeatchecker(command_number_online)
 
+    if code_status is True:
+        continue
 
     #cutting down the command number from main command
 
