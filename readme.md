@@ -27,12 +27,14 @@
 		os
 		subproccess
 		time
+		sys
+
 
 #Project Details:
 
 	Planning Date: 26-06-2021
 	Starting Date: 26-06-2021
-	Release Date : ----------
+	Release Date : 07-06-2021
 
 #Github Details:
 	link: https://github.com/agentswagt/Remote-Command-Executer---onHeart
